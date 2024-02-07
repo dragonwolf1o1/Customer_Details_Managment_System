@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Home</title>
+{% endblock title %}
+
+
+{% block body %}
+    <div class='example'>
+        <a href="{% url 'search' %}"><i class="fa-solid fa-magnifying-glass"></i>Find Customer</a>
+        <p>No. of total  customers are:  {{ count }}</p>
+    </div>
+    <a class='add' href="{% url 'addc' %}"><i class="fa-solid fa-plus"></i>Add Customer</a>
+    {% for dat in data reversed %}
+    <div class='detail'>
+        <div class='sno'>
+            <p class='sn'>{{ dat.c_name }}</p>
+        </div>
+        <p class='det'><i class="fa-regular fa-star"></i>{{ dat.detail1 }}</p>
+        <p class='det'><i class="fa-regular fa-star"></i>{{ dat.detail2 }}</p>
+        <p class='det'><i class="fa-regular fa-star"></i>{{ dat.detail3 }}</p>
+        <p class='det'><i class="fa-regular fa-star"></i>{{ dat.detail4 }}</p>
+        <a class='button' href="delete/{{ dat.id }}">Delete</a>
+        <a class='button' href="customer/{{ dat.id }}">Customize</a>
+
+
+
+    </div>
+    {% endfor %}
+{% endblock body %}

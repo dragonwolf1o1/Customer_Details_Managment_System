@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Add Customer</title>
+{% endblock title %}
+
+
+{% block body %}
+<div class="customer">
+    <div class="message">
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    </div> 
+
+    <div class='cdetails'>
+        <form method='POST'>
+            {% csrf_token %}
+                <p>Enter Customer Name:</p><input name='name' class='name'></input>
+                <p>Detail:1</p><input name='d1' ></input>
+                <p>Detail:2</p><input name='d2' ></input>
+                <p>Detail:3</p><input name='d3' ></input>
+                <p>Detail:4</p><input name='d4' ></input>
+                <div class='submit'>
+                    <button>Submit</button>
+                </div>
+        </form>
+
+    </div>
+
+
+
+</div>
+{% endblock body %}

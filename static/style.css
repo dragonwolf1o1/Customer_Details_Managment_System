@@ -1,0 +1,844 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+body{
+    background-color: rgb(125, 212, 241);
+}
+
+a{
+    text-decoration: none;
+}
+.navbar{
+    background-color: rgb(0, 189, 252);
+    width:100%;
+    height: 12%;
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+}
+
+.home{
+    float: left;
+    text-align: center;
+    padding: 10px 50px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 17px;
+    background-color: lightblue;
+    margin-left: 8%;
+    margin-top: 0.5%;
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+}
+
+.home:hover{
+    background-color: rgb(2, 96, 128);
+    transform: scale(1);
+    transition: all 0.3s linear;
+}
+
+.logout{
+    float: right;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: lightblue;
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+    padding: 10px 50px;
+    margin-right: 8%;
+    margin-top: 0.5%;
+}
+
+.logout:hover{
+    background-color: rgb(2, 96, 128);
+    transform: scale(1);
+    transition: all 0.3s linear;
+}
+
+img{
+    margin-left: 28%;
+    border-radius: 5px;
+    border: 2px rgb(0, 189, 252);
+}
+
+/* Login Page */
+.loginname{
+    text-align: center;
+    width: 15%;
+    height: 65px;
+    background-color: rgb(0, 189, 252);
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+    margin-left: 42%;
+    margin-top: 3%;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-bottom: -19px;
+
+}
+
+.loginpannel{
+    text-align: center;
+    width: 25%;
+    height: 450px;
+    background-color: rgb(0, 189, 252);
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+    margin-left: 37%;
+    margin-top: 3%;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.loginpannel input[type="text"]{
+    width: 80%;
+    height: 40px;
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+    margin-top: 15%;
+    margin-left: 2%;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.loginpannel input[type="password"]{
+    width: 80%;
+    height: 40px;
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+    margin-top: 15%;
+    margin-left: 2%;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.loginpannel button{
+    width: 40%;
+    height: 40px;
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+    margin-top: 15%;
+    margin-left: 4%;
+    margin-bottom: 18%;
+    font-size: 20px;
+    background-color: rgb(0, 189, 252);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.loginpannel input[type="submit"]:hover{
+    background-color: rgb(2, 96, 128);
+    transform: scale(1);
+    transition: all 0.3s linear;
+}
+
+.loginpannel button{
+    width: 40%;
+    height: 40px;
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+    margin-top: 15%;
+    margin-left: 4%;
+    margin-bottom: 18%;
+    font-size: 20px;
+    background-color: rgb(0, 189, 252);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.loginpannel button:hover{
+    background-color: rgb(2, 96, 128);
+    transform: scale(1);
+    transition: all 0.3s linear;
+}
+
+.loginpannel a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.loginpannel a:hover{
+    color: rgb(2, 96, 128);
+    transform: scale(1);
+    transition: all 0.3s linear;
+}
+
+.loginpannel p{
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+.forget{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-top: 100%;
+    margin-left: -56%;
+    font-size: 20px;
+}
+
+.forget:hover{
+    color: rgb(2, 96, 128);
+    
+}
+
+@media screen and (max-width: 1292px){
+    .loginname{
+        height: auto;
+        width: auto;
+    }
+}
+
+.footer{
+    width:100%;
+    background-color: rgb(0, 189, 252);
+    height: 150px;
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    z-index: 10;
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+    text-align: center;
+    position: fixed;
+    
+    
+}
+
+.footer p{
+    margin-top: 2%;
+    font-size: 20px;
+    bottom: 0; 
+    left: 0;
+}
+
+.footer a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.footer i{
+    margin-top: 20px;
+}
+
+.footer a:hover{
+    color: rgb(2, 96, 128);
+    
+}
+.footer a i {
+    transition: all 0.3s linear;
+}
+
+.footer a:hover i {
+    transform: scale(1.5);
+}
+
+.example{
+    margin-top: 40px;
+}
+  /* Style the submit button */
+.example a {
+    float: right;
+    width: 9%;
+    padding: 10px;
+    background: rgb(0, 189, 252);
+    color: black;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+    font-size: larger;
+  }
+  .example p{
+    margin-left: 2%;
+    width: 20%;
+    height: 35px;
+    background-color: rgb(0, 189, 252);
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+  
+  }
+.example a:hover {
+    background-color: rgb(2, 96, 128);
+    transform: scale(1);
+    transition: all 0.3s linear;
+  }
+  
+  /* Clear floats */
+.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.add{
+    float: right;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-bottom: 5%;
+    width: 10%;
+    height: 40px;
+    background-color: rgb(0, 189, 252);
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.add:hover{
+    background-color: rgb(2, 96, 128);
+    transform: scale(1);
+    transition: all 0.3s linear;
+}
+
+.detail{
+    margin: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 80px;
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+    margin-bottom: 180px;
+    height: 200px;
+    background-color: rgb(0, 189, 252);
+    font-weight: 900;
+    color: black;
+}
+
+
+.sno{
+    background-color: rgb(0, 189, 252);
+    width: 40%;
+    height: 200px;
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+    float: left;
+    margin: 0;
+    display: inline;
+}
+
+.sno p{
+    text-align: center;
+    color: black;
+    display: block;
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.sn{
+    padding-top: 55px;
+}
+
+.det{
+    font-size: large;
+    margin-left: 750px;
+    margin-top: 20px;
+}
+
+.loginpannel input[type="email"]{
+    width: 80%;
+    height: 40px;
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+    margin-top: 15%;
+    margin-left: 2%;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 50px;
+}
+
+.loginpannel .submit{
+    cursor: pointer;
+}
+
+.detail .button{
+    width: 7%;
+    height: 30px;
+    float: right;
+    margin-right: 10px;
+    background-color: lightblue;
+    border: 2px solid rgb(3, 113, 150) ;
+    border-radius: 10px;
+    margin-top: -15px;
+    cursor:pointer;
+    text-align: center;
+    padding-top: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.detail .button:hover{
+    background-color: rgb(2, 96, 128);
+    transform: scale(1);
+    transition: all 0.3s linear;
+}
+
+
+.ccname{
+    background-color: rgb(0, 189, 252);
+    border: 2px solid rgb(3, 113, 150) ;
+    border-radius: 10px;
+    width: 30%;
+    height: 100px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 50px;
+}
+
+.ccname p{
+    padding-top: 25px;
+}
+
+.message{   
+    width: 15%;
+    height: 10px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: -20px;
+    color: rgb(197, 153, 6);
+}
+
+.cdetails{
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    height: 500px;
+
+}
+
+.cdetails input{
+    width: 80%;
+    height: 40px;
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: 9%;
+    font-size: 20px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.cdetails .submit{
+    background-color: rgb(0, 189, 252);
+    border: 2px solid rgb(3, 113, 150) ;
+    border-radius: 10px;
+    width: 10%;
+    height: 20px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+    margin-top: 50px;
+}
+
+.home:hover{
+    background-color: rgb(2, 96, 128);
+    transform: scale(1);
+    transition: all 0.3s linear;
+}
+
+.cdetails .submit button{
+    background-color: rgb(0, 189, 252);
+    text-decoration: none;
+    border: 0px solid rgb(0, 189, 252);
+    font-size: large;
+    cursor: pointer;
+    width: 110%;
+}
+
+.cdetails .submit a:hover{
+    color: rgb(2, 96, 128);
+    transform: scale(1);
+    transition: all 0.3s linear;
+}
+
+.cdetails p{
+    width: 80%;
+    height: 40px;
+    margin-top: 5%;
+    margin-left: 9%;
+    font-size: 20px;
+    padding-left: 10px;
+    text-align: center;
+    margin-bottom: -5%;
+}
+
+.cdetails .name{
+    width: 50%;
+    height: 40px;
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: 25%;
+    font-size: 20px;
+    padding-left: 10px;
+    text-align: center;
+}
+.messag{   
+    width: 20%;
+    height: 10px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+
+.customer{
+    height:900px;
+    margin-bottom: 200px;
+}
+
+
+.container{
+    text-align: center;
+    width: 25%;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 37%;
+    margin-top: -2%;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+
+}
+
+.container input[type="text"]{
+    width: 80%;
+    height: 40px;
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+    margin-top: 15%;
+    margin-left: 2%;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.container button{
+    width: 40%;
+    height: 40px;
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+    margin-top: 15%;
+    margin-left: 4%;
+    margin-bottom: 18%;
+    font-size: 20px;
+    background-color: rgb(0, 189, 252);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.container button:hover{
+    background-color: rgb(2, 96, 128);
+    transform: scale(1);
+    transition: all 0.3s linear;
+}
+
+.para{
+    font-size: x-large;
+    font-weight: bold;
+    color: black;
+    padding-left: 5%;
+}
+
+.messages{
+    text-align: center;
+    width: 25%;
+    height: 0px;
+    margin-left: 38%;
+    margin-top: 3%;
+    font-size: 20px;
+    color: red;
+}
+
+.mmm{
+    float: right;
+    margin-right: 5%;
+    width: 13%;
+    height: 50px;
+    background-color: rgb(0, 189, 252);
+    border: 2px solid rgb(3, 113, 150);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+
+}
+
+@media screen and (max-width: 1710px){
+    .example a{
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 1524px){
+    .example a{
+        width: 9%;
+        font-size: medium;
+    }
+    .add{
+        font-size: medium;
+    }
+    .detail .det{
+        margin-left:45%;
+    }
+    .example p{
+        width: 15%;
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 1492px){
+    .loginname{
+        height: 50px;
+        width: 150px;
+        margin-left: 43.5%;
+    }
+    .loginname h1{
+        font-size: larger;
+    }
+    
+}
+
+@media screen and (max-width: 1424px){
+    .example a{
+        font-size: small;
+    }
+    .example p{
+        font-size: small;
+        height: 10%;
+    }
+    .add{
+        font-size: small;
+    }
+    .detail a{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 1304px){
+    .navbar .img{
+        margin-left: 23%;
+    }
+}
+@media screen and (max-width: 1222px){
+    .loginname{
+        margin-left: 43%;
+    }
+
+    .navbar .img{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 1160px){
+    .loginname{
+        margin-left: 41.5%;
+        margin-bottom: 2%;
+    }
+    .loginpannel{
+        width: 40%;
+        margin-left: 30%;
+    }
+    .navbar .img{
+        margin-left: 18%;
+    }
+    .example a{
+        width: 8%;
+    }
+    .detail a{
+        font-size: 70%;
+        font-weight: bolder;
+    }
+    .detail .button{
+        width: 10%;
+    }
+
+    
+}
+
+@media screen and (max-width: 954px){
+    .detail a{
+        font-size: 60%;
+    }
+    .detail{
+        height: 150%;
+    }
+    .detail .sno{
+        height: 145px;
+    
+    }
+    .detail .sno p{
+        font-size:xx-large;
+    }
+    .detail .det{
+        font-size:small;
+        margin-bottom: -1px;
+    }
+    .detail .button{
+        margin-top: -35px;
+    }
+}
+@media screen and (max-width: 916px){
+    .loginname{
+        height: 30px;
+        width: 120px;
+        margin-left: 42%;
+        font-size: medium;
+    }
+    .loginpannel a{
+        margin-left: 8%;
+    }
+
+    .navbar .img{
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 743px){
+    .loginname{
+        margin-left: 40%;
+    }
+    .loginpannel{
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .navbar .img{
+        margin-left: 9%;
+    }
+    .example a{
+        width: 12%;
+    }
+    .detail .button{
+        font-size:55%;
+    }
+    
+}
+
+
+@media screen and (max-width: 658px){
+    .navbar .img{
+        margin-left: 6%;
+    }
+    .detail .button{
+        font-size:50%;
+        height: 30px;
+    }
+}
+@media screen and (max-width: 604px){
+    .loginname{
+        width: 100px;
+        margin-left: 38%;
+        font-size: small;
+    }
+
+    .navbar .img{
+        margin-left: 4%;
+    }
+}
+
+@media screen and (max-width: 568px){
+    .navbar .img{
+        margin-left: 2%;
+    }
+    .detail .button{
+        font-size:40%;
+    }
+    .add{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 552px){
+    .navbar .img{
+        margin-left: 1%;
+    }
+}
+
+@media screen and (max-width: 544px){
+    .navbar .img{
+        margin-left: 36%;
+    }
+}
+
+
+@media screen and (max-width: 498px){
+    .navbar .img{
+        margin-left: 33%;
+    }
+    .detail .button{
+        height: 27px;
+        font-size: 30%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .navbar .home{
+        margin-left: 27%;
+    }
+    .navbar .logout{
+        margin-right: 30%;
+    }
+    .navbar .img{
+        margin-left: 29%;
+    }
+    .detail .button{
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .example p{
+        width: 30%;
+    }
+    .example a{
+        width: 30%;
+    }
+    .add{
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 332px){
+    .loginpannel button{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 324px){
+    .loginname{
+        margin-left: 33%;
+    }
+    .loginpannel input[placeholder]{
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 262px){
+    .loginname{
+        margin-left: 30%;
+    }
+}

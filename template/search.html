@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Search</title>
+{% endblock title %}
+
+
+{% block body %}
+
+<div class='container'>
+    <form method='POST'>
+        {% csrf_token %}
+        <input placeholder='Enter your search content...........' type="text" name='value' ></input>
+        <button>Search</button>
+    </form>
+</div>
+{% for message in messages %}
+<p class='mmm'>{{ message }}</p>
+{% endfor %}
+
+<p class='para'>Search Results:</p>
+
+{% for dat in data reversed %}
+<div class='detail'>
+    <div class='sno'>
+        <p class='sn'>{{ dat.c_name }}</p>
+    </div>
+    <p class='det'><i class="fa-regular fa-star"></i>{{ dat.detail1 }}</p>
+    <p class='det'><i class="fa-regular fa-star"></i>{{ dat.detail2 }}</p>
+    <p class='det'><i class="fa-regular fa-star"></i>{{ dat.detail3 }}</p>
+    <p class='det'><i class="fa-regular fa-star"></i>{{ dat.detail4 }}</p>
+    <a class='button' href="delete/{{ dat.id }}">Delete</a>
+    <a class='button' href="customer/{{ dat.id }}">Customize</a>
+
+
+
+</div>
+{% endfor %}
+
+{% endblock body %}

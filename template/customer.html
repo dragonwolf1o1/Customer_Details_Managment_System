@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Customer</title>
+{% endblock title %}
+
+
+{% block body %}
+<div class="customer">
+    <div class="ccname">
+
+        <p>{{ data.c_name }}</p>
+
+    </div> 
+    <div class="message">
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    </div> 
+
+    <div class='cdetails'>
+        <form method='POST'>
+            {% csrf_token %}
+                <p>Enter Customer Name:</p><input name='nam' value="{{ data.c_name }}"></input>
+                <p>Detail:1</p><input name='detail1' value="{{ data.detail1 }}"></input>
+                <p>Detail:2</p><input name='detail2' value="{{ data.detail2 }}"></input>
+                <p>Detail:3</p><input name='detail3' value="{{ data.detail3 }}"></input>
+                <p>Detail:4</p><input name='detail4' value="{{ data.detail4 }}"></input>
+                <div class='submit'>
+                    <button>Submit</button>
+                </div>
+        </form>
+
+    </div>
+
+
+</div>
+
+{% endblock body %}
